@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(./intro-component-with-signup-form-master/images/bg-intro-desktop.png);
+  font-family: poppins;
+  background-color: hsl(0, 100%, 74%);
+  font-size: 16px;
+}
+
+.back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12rem 0;
+}
+
+.left {
+  /* flex: 1; */
+  /* display: flex;
+  flex-direction: column; */
+  /* justify-content: center; */
+  /* align-content: center; */
+  /* text-align: left; */
+  width: 28%;
+  color: white;
+  margin: 0 5rem;
+  margin-left: -3rem;
+}
+
+h1 {
+  font-size: 46px;
+}
+
+.leftText {
+  padding-top: 1rem;
+}
+
+.firstHeader {
+  background-color: hsl(248, 32%, 49%);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 14px;
+  margin-bottom: 14px;
+  border-radius: 10px;
+  box-shadow: 0 6px 6px rgba(122, 122, 122, 0.6);
+  color: white;
+  font-size: 10px;
+}
+
+span {
+  font-weight: bold;
+}
+
+.login {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 6px 6px rgba(122, 122, 122, 0.6);
+  height: 25rem;
+}
+
+input {
+  width: 19rem;
+  padding: 12px;
+  margin: 13px 0;
+  border-radius: 8px;
+  border: 1.3px solid grey;
+  /* border-style: none; */
+  box-shadow: 0 1px 4px grey;
+}
+
+button {
+  width: 19rem;
+  padding: 10px;
+  color: white;
+  background-color: hsl(154, 59%, 51%);
+  border-radius: 4px;
+  border-style: none;
+  text-transform: uppercase;
+  box-shadow: 2px 2px 6px grey;
+}
+
+.footertext {
+  font-size: 8px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.footertext span {
+  color: darkred;
+}
+
+.formBox {
+  position: relative;
+}
+
+.formBox i {
+  position: absolute;
+  right: 15px;
+  top: 18%;
+  color: red;
+}
+
+.errorText {
+  font-size: 10px;
+  text-align: right;
+  padding-right: 2px;
+  padding: 9px;
+  color: red;
+}
+
+/* .errorText.error input {
+  border: 2px solid red;
+} */
+
+.errorText {
+  display: none;
+}
+
+.formBox i {
+  display: none;
+}
+
+.formBox.error i,
+.formBox.error .errorText {
+  display: block;
+}
+
+@media screen and (max-width: 500px) {
+  * {
+    margin: 0 auto;
+  }
+
+  .back {
+    display: flex;
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 30px;
+    width: 250px;
+  }
+  .left {
+    margin-top: -10rem;
+  }
+  .left p {
+    width: 390px;
+    padding: 30px;
+    margin-left: -4.3rem;
+  }
+  .login {
+    height: 25rem;
+    padding: 90px 30px;
+  }
+
+  button {
+    margin-top: 10px;
+  }
+
+  .footertext {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+  span {
+    padding: 5px;
+  }
+}
